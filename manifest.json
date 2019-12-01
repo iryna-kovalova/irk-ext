@@ -1,0 +1,14 @@
+{
+  "name": "irk ext",
+  "description": "autofocusing",
+  "version": "2.0",  
+  "permissions": [
+    "tabs", "http://la-conjugaison.nouvelobs.com/*", "https://la-conjugaison.nouvelobs.com/*","https://translate.academic.ru/*"
+  ],
+  "content_scripts":[{
+	  "matches": ["https://la-conjugaison.nouvelobs.com/*","https://translate.academic.ru/*"],
+	  "js": ["a.js"],
+    "run_at": "document_end"
+  }],
+  "manifest_version": 2
+}
